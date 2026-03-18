@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiago | Design & Code</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="th (4).png">
+
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#CCFF00',
+                        dark: '#000000',
+                    },
+                    fontFamily: {
+                        archivo: ['Archivo Black', 'sans-serif'],
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'brutal': '10px 10px 0px 0px #000000',
+                        'brutal-white': '10px 10px 0px 0px rgba(255, 255, 255, 0.1)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-shape {
+            height: 500px;
+            border-radius: 40px;
+        }
+        .hero-image {
+            max-height: 110%;
+            filter: drop-shadow(0px 20px 30px rgba(0,0,0,0.1));
+        }
+        .brutal-border { border: 2px solid black; }
+        .brutal-card-hover:hover {
+            background-color: #CCFF00;
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body class="bg-white text-dark font-inter">
+
+    <nav class="py-6">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <a href="#" class="font-archivo text-xl uppercase tracking-tighter">Thiago Shimabukuro Cortez</a>
+            <div class="hidden lg:flex gap-8 font-bold text-xs">
+                <a href="#sobre" class="hover:underline">SOBRE</a>
+                <a href="#servicos" class="hover:underline">SERVIÇOS</a>
+                <a href="#projetos" class="hover:underline">PROJETOS</a>
+                <a href="#contato" class="hover:underline">CONTATO</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container mx-auto px-4 mt-12 mb-24">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+            <div class="lg:w-1/2">
+                <h1 class="font-archivo text-5xl lg:text-7xl uppercase leading-[0.9] mb-8">
+                    design e estratégia<br>em um só lugar.
+                </h1>
+                <div class="flex flex-col sm:flex-row items-start gap-6">
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-xs">
+                        Código, design e experiência trabalhando juntos para criar soluções digitais completas e que realmente performam.
+                    </p>
+                    <a href="https://wa.me/5513991967570?text=Olá%20Thiago!%20Vi%20seu%20portfólio%20e%20gostaria%20de%20falar%20sobre%20um%20projeto." 
+   target="_blank" 
+   class="inline-block">
+    <button class="bg-primary hover:bg-[#b8e600] transition-transform hover:scale-105 font-extrabold text-[10px] uppercase px-8 py-4 rounded-full brutal-border shadow-sm">
+        Fale Diretamente Comigo!
+    </button>
+</a>
+                </div>
+            </div>
+
+            <div class="lg:w-1/2 w-full">
+                <div class="hero-shape bg-primary relative flex justify-center items-end overflow-visible">
+                    <img src="Foto Perfil.png" alt="Thiago" class="hero-image z-10">
+                    <div class="absolute bottom-10 -right-4 bg-black p-4 rounded-2xl shadow-lg text-white rotate-6 z-20">
+                        <p class="m-0 font-bold text-xs italic">A escolha para 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 pt-12 border-t border-gray-200">
+            <div class="text-center">
+                <div class="font-archivo text-5xl">30+</div>
+                <div class="text-[10px] uppercase font-bold text-gray-400 mt-2">Clientes Satisfeitos</div>
+            </div>
+            <div class="text-center">
+                <div class="font-archivo text-5xl">100+</div>
+                <div class="text-[10px] uppercase font-bold text-gray-400 mt-2">Projetos Realizados</div>
+            </div>
+            <div class="text-center">
+                <div class="font-archivo text-5xl">5+</div>
+                <div class="text-[10px] uppercase font-bold text-gray-400 mt-2">Anos de Exp.</div>
+            </div>
+            <div class="text-center">
+                <div class="font-archivo text-5xl">10+</div>
+                <div class="text-[10px] uppercase font-bold text-gray-400 mt-2">Páginas Dev</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="bg-[#fdfdfd] py-24 border-y border-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="font-archivo text-5xl lg:text-6xl uppercase leading-none mb-10">
+                        A mente por trás <br><span class="text-gray-400">do pixel</span>
+                    </h2>
+                    <div class="bg-primary p-8 rounded-[30px] brutal-border font-bold text-lg mb-8 -rotate-1 shadow-brutal">
+                        "Acredito que um bom design não é apenas como algo parece, mas como ele funciona sob o capô."
+                    </div>
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        Com formação em <strong>Design Gráfico</strong> e especialização em <strong>UI/UX</strong>, encontrei no <strong>Front-end</strong> a ferramenta perfeita para dar vida às minhas criações. Não sou apenas um desenvolvedor que segue o layout; sou o designer que entende as limitações e as possibilidades do código.
+                    </p>
+                </div>
+                <div class="lg:w-1/2 w-full lg:pl-12">
+                    <h5 class="font-bold uppercase text-xs tracking-[2px] mb-8 text-gray-500">Minha Trajetória</h5>
+                    <ul class="space-y-0">
+                        <li class="flex justify-between items-center py-5 border-b border-gray-200">
+                            <span class="font-extrabold uppercase text-sm">UI/UX Design</span>
+                            <span class="bg-black text-white text-[10px] px-3 py-1 rounded-full uppercase">Intermediário</span>
+                        </li>
+                        <li class="flex justify-between items-center py-5 border-b border-gray-200">
+                            <span class="font-extrabold uppercase text-sm">Front-end (Bootstrap / Tailwind)</span>
+                            <span class="bg-black text-white text-[10px] px-3 py-1 rounded-full uppercase">Júnior</span>
+                        </li>
+                        <li class="flex justify-between items-center py-5 border-b border-gray-200">
+                            <span class="font-extrabold uppercase text-sm">Identidade Visual</span>
+                            <span class="bg-black text-white text-[10px] px-3 py-1 rounded-full uppercase">Avançado</span>
+                        </li>
+                    </ul>
+                    <div class="mt-12">
+                        <p class="text-xs text-gray-500 mb-1 uppercase tracking-wider">Atualmente focado em:</p>
+                        <p class="font-extrabold text-dark leading-tight">
+                            Interfaces de alta performance e Branding Digital.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24">
+        <div class="container mx-auto px-4">
+            <div class="mb-16">
+                <h2 class="font-archivo text-5xl uppercase mb-4">Meus <br><span class="text-gray-400">Serviços</span></h2>
+                <div class="w-16 h-1 bg-primary mb-6"></div>
+                <p class="text-xs font-bold uppercase tracking-widest text-gray-400">Soluções completas do conceito ao código.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="brutal-border rounded-[30px] p-10 bg-white transition-all brutal-card-hover group">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6 transition-colors group-hover:bg-white">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path></svg>
+                    </div>
+                    <h3 class="font-archivo text-2xl uppercase mb-4">UI/UX Design</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Criação de interfaces intuitivas e foco total na experiência do usuário final.</p>
+                </div>
+                <div class="brutal-border rounded-[30px] p-10 bg-white transition-all brutal-card-hover group">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6 transition-colors group-hover:bg-white">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"></path></svg>
+                    </div>
+                    <h3 class="font-archivo text-2xl uppercase mb-4">Desenvolvimento</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Transformo designs em código limpo, responsivo e performático.</p>
+                </div>
+
+                <div class="brutal-border rounded-[30px] p-10 bg-white transition-all brutal-card-hover group">
+                    <div class="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6 transition-colors group-hover:bg-white">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><path d="M21 15l-5-5L5 21"></path></svg>
+                    </div>
+                    <h3 class="font-archivo text-2xl uppercase mb-4">Branding</h3>
+                    <p class="text-sm text-gray-500 leading-relaxed">Identidade visual marcante que comunica a essência da sua marca.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="py-24 bg-white">
+    <div class="container mx-auto px-4">
+        
+        <div class="mb-16">
+            <h2 class="font-archivo text-5xl uppercase mb-4">Trabalhos <br><span class="text-gray-400">Selecionados</span></h2>
+            <div class="w-16 h-1 bg-primary mb-6"></div>
+            <p class="text-xs font-bold uppercase tracking-[2px] text-gray-400">
+                Clique para ver os detalhes de cada projeto.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="group relative rounded-[40px] overflow-hidden border-2 border-black cursor-pointer h-[450px]">
+                <img src="Jornada.png" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Projeto 1">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-10 text-white">
+                    <span class="bg-primary text-black text-[10px] font-extrabold uppercase px-4 py-1 rounded-full w-max mb-3">Front-End Dev</span>
+                    <h3 class="text-2xl font-bold">Agência Jornada</h3>
+                    <p class="text-sm opacity-75">Desenvolvimento em HTML e CSS da página da agência de viagens Jornada</p>
+                </div>
+            </div>
+
+            <div class="group relative rounded-[40px] overflow-hidden border-2 border-black cursor-pointer h-[450px]">
+                <img src="pastel.png" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Projeto 2">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-10 text-white">
+                    <span class="bg-primary text-black text-[10px] font-extrabold uppercase px-4 py-1 rounded-full w-max mb-3">Design Gráfico</span>
+                    <h3 class="text-2xl font-bold">Identidade Visual Pastelaria da Claúdia</h3>
+                    <p class="text-sm opacity-75">O objetivo era entregar uma marca divertida, ao mesmo tempo moderna e que não fugisse do seu ramo de atuação</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 group relative rounded-[40px] overflow-hidden border-2 border-black cursor-pointer h-[500px]">
+                <img src="livable.png" 
+                     class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Projeto 3">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-10 text-white">
+                    <span class="bg-primary text-black text-[10px] font-extrabold uppercase px-4 py-1 rounded-full w-max mb-3">UI/UX Design</span>
+                    <h3 class="text-2xl font-bold">Livable - App Comunitário</h3>
+                    <p class="text-sm opacity-75 max-w-xl">Aplicativo de avaliações de usuários para bairros, com o intuito de criar uma rede comunitária real.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-12">
+            <a href="#" class="inline-block border-2 border-black rounded-full px-10 py-4 font-bold uppercase text-xs transition-colors hover:bg-black hover:text-white">
+                Ver Portfólio Completo
+            </a>
+        </div>
+    </div>
+</section>
+
+    <section class="py-24 bg-[#0a0a0a] text-white overflow-hidden">
+    <div class="container mx-auto px-4">
+        
+        <div class="mb-16 text-center md:text-left">
+            <h2 class="font-archivo text-5xl uppercase mb-4 leading-none">
+                O que dizem <br><span class="text-primary">sobre meu trabalho</span>
+            </h2>
+            <p class="text-gray-500 font-bold text-[10px] uppercase tracking-widest">Feedback de clientes e parceiros.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="bg-[#141414] border-2 border-white/10 rounded-[40px] p-10 transition-all duration-300 hover:border-primary hover:-translate-y-2 group">
+                <div class="font-archivo text-6xl text-primary leading-none mb-[-10px] opacity-50 group-hover:opacity-100 transition-opacity">“</div>
+                <p class="text-gray-300 italic text-lg leading-relaxed mb-8">
+                    "O Thiago conseguiu traduzir exatamente o que nossa marca precisava. O código é extremamente limpo e o design superou nossas expectativas."
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-extrabold text-black uppercase">
+                        RC
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-sm text-white">Ricardo Costa</h5>
+                        <span class="text-[10px] text-gray-500 uppercase tracking-wider">CEO na TechFlow</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#141414] border-2 border-white/10 rounded-[40px] p-10 transition-all duration-300 hover:border-primary hover:-translate-y-2 group text-white">
+                <div class="font-archivo text-6xl text-primary leading-none mb-[-10px] opacity-50 group-hover:opacity-100 transition-opacity">“</div>
+                <p class="text-gray-300 italic text-lg leading-relaxed mb-8">
+                    "Raro encontrar um profissional que domina UI/UX e Front-end com a mesma maestria. Facilitou muito o processo de entrega do produto."
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-extrabold text-black uppercase">
+                        AM
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-sm text-white">Ana Martins</h5>
+                        <span class="text-[10px] text-gray-500 uppercase tracking-wider">Product Manager</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#141414] border-2 border-white/10 rounded-[40px] p-10 transition-all duration-300 hover:border-primary hover:-translate-y-2 group">
+                <div class="font-archivo text-6xl text-primary leading-none mb-[-10px] opacity-50 group-hover:opacity-100 transition-opacity">“</div>
+                <p class="text-gray-300 italic text-lg leading-relaxed mb-8">
+                    "A identidade visual que ele criou nos deu uma autoridade imediata no mercado. Recomendo fortemente para qualquer projeto digital."
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center font-extrabold text-black uppercase">
+                        JP
+                    </div>
+                    <div>
+                        <h5 class="font-bold text-sm text-white">João Pedro</h5>
+                        <span class="text-[10px] text-gray-500 uppercase tracking-wider">Fundador da Arkhos</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <section id="contato" class="bg-black py-24">
+        <div class="container mx-auto px-4">
+            <div class="bg-primary p-8 lg:p-16 rounded-[50px] brutal-border shadow-brutal-white">
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-3/5">
+                        <h2 class="font-archivo text-5xl lg:text-7xl leading-[0.9] mb-6">VAMOS CRIAR <br>ALGO LENDÁRIO?</h2>
+                        <p class="font-bold uppercase text-sm">Estou pronto para transformar sua ideia em código e design de elite.</p>
+                    </div>
+                    <div class="lg:w-2/5 w-full">
+                        <form id="contact-form" action="#" class="space-y-6">
+                            <input type="text" placeholder="QUAL SEU NOME?" class="w-full bg-transparent border-b-2 border-black p-4 font-bold placeholder-black focus:outline-none focus:border-white transition-colors">
+                            <input type="email" placeholder="SEU MELHOR E-MAIL" class="w-full bg-transparent border-b-2 border-black p-4 font-bold placeholder-black focus:outline-none focus:border-white transition-colors">
+                            <textarea placeholder="CONTE SOBRE O PROJETO..." rows="3" class="w-full bg-transparent border-b-2 border-black p-4 font-bold placeholder-black focus:outline-none focus:border-white transition-colors"></textarea>
+                            <button class="w-full bg-black text-white font-bold uppercase py-4 rounded-full hover:scale-[1.02] transition-transform">Enviar Proposta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="mt-24 pt-12 border-t border-gray-800 flex flex-col md:flex-row justify-between gap-8 text-white">
+                <div>
+                    <h4 class="font-archivo text-2xl mb-2">Thiago Shimabukuro Cortez</h4>
+                    <p class="text-[10px] text-gray-500 tracking-widest uppercase">Designer Gráfico • UI/UX • Front-end Developer</p>
+                </div>
+                <div class="text-right">
+                    <div class="flex gap-6 justify-end font-archivo text-sm mb-4">
+                        <a href="https://www.linkedin.com/in/thiago-shimabukuro-cortez-a7983112a/" class="hover:text-primary">LINKEDIN</a>
+                        <a href="https://www.instagram.com/cortez.th/" class="hover:text-primary">INSTAGRAM</a>
+                        <a href="https://github.com/thiagocortez96" class="hover:text-primary">GITHUB</a>
+                        <a href="https://www.behance.net/thiagocortez2/projects" class="hover:text-primary">BEHANCE</a>
+                    </div>
+                    <p class="text-[10px] text-gray-500">&copy; 2026 — Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <button id="backToTop" onclick="scrollToTop()" class="fixed bottom-8 right-8 w-12 h-12 bg-primary brutal-border rounded-xl shadow-brutal flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:-translate-y-1">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path d="M18 15l-6-6-6 6"></path></svg>
+    </button>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const btn = document.getElementById('backToTop');
+            if (window.scrollY > 400) {
+                btn.classList.remove('opacity-0', 'invisible');
+                btn.classList.add('opacity-100', 'visible');
+            } else {
+                btn.classList.add('opacity-0', 'invisible');
+                btn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
