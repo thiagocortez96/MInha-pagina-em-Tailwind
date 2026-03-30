@@ -7,7 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="th (4).png">
-    <meta name="google-site-verification" content="3Ol6V6eauDIs77cQNuJ11r4QenHnEe9-V_AZ17GLksQ" />
+    <link rel="stylesheet" href="estilo.css">
+
     
     <script>
         tailwind.config = {
@@ -51,7 +52,7 @@
     <!-- CABEÇALHO -->
     <nav class="py-6">
         <div class="container mx-auto px-4 flex justify-between items-center">
-            <a href="#" class="font-archivo text-xl uppercase tracking-tighter">Thiago Shimabukuro Cortez</a>
+            <h1 class="font-archivo text-xl uppercase tracking-tighter">Thiago Shimabukuro Cortez</h1>
             <div class="hidden lg:flex gap-8 font-bold text-xs">
                 <a href="#sobre" class="hover:underline">SOBRE</a>
                 <a href="#servicos" class="hover:underline">SERVIÇOS</a>
@@ -206,17 +207,17 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
             <div class="group relative rounded-[40px] overflow-hidden border-2 border-black cursor-pointer h-[450px]">
-                <img src="Jornada.png" 
+                <img src="Jornada.png" alt="Agência front-end"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Projeto 1">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-10 text-white">
                     <span class="bg-primary text-black text-[10px] font-extrabold uppercase px-4 py-1 rounded-full w-max mb-3">Front-End Dev</span>
-                    <h3 class="text-2xl font-bold">Agência Jornada</h3>
+                    <h3 class="text-2xl font-bold">Front-End Agência Jornada</h3>
                     <p class="text-sm opacity-75">Desenvolvimento em HTML e CSS da página da agência de viagens Jornada</p>
                 </div>
             </div>
 
             <div class="group relative rounded-[40px] overflow-hidden border-2 border-black cursor-pointer h-[450px]">
-                <img src="Pastel.png" 
+                <img src="Pastel.png" alt="identidade visual pastelaria" 
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Projeto 2">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-10 text-white">
                     <span class="bg-primary text-black text-[10px] font-extrabold uppercase px-4 py-1 rounded-full w-max mb-3">Design Gráfico</span>
@@ -226,18 +227,18 @@
             </div>
 
             <div class="md:col-span-2 group relative rounded-[40px] overflow-hidden border-2 border-black cursor-pointer h-[500px]">
-                <img src="livable.png" 
+                <img src="livable.png" alt="UI/UX deisign livable"
                      class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Projeto 3">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-10 text-white">
                     <span class="bg-primary text-black text-[10px] font-extrabold uppercase px-4 py-1 rounded-full w-max mb-3">UI/UX Design</span>
-                    <h3 class="text-2xl font-bold">Livable - App Comunitário</h3>
+                    <h3 class="text-2xl font-bold">UI/UX Design</h3>
                     <p class="text-sm opacity-75 max-w-xl">Aplicativo de avaliações de usuários para bairros, com o intuito de criar uma rede comunitária real.</p>
                 </div>
             </div>
         </div>
 
         <div class="text-center mt-12">
-            <a href="#" class="inline-block border-2 border-black rounded-full px-10 py-4 font-bold uppercase text-xs transition-colors hover:bg-black hover:text-white">
+            <a href="portfolio.html" class="inline-block border-2 border-black rounded-full px-10 py-4 font-bold uppercase text-xs transition-colors hover:bg-black hover:text-white">
                 Ver Portfólio Completo
             </a>
         </div>
@@ -355,11 +356,11 @@
                     <p class="text-[10px] text-gray-500 tracking-widest uppercase">Designer Gráfico • UI/UX • Front-end Developer</p>
                 </div>
                 <div class="text-right">
-                    <div class="flex gap-6 justify-end font-archivo text-sm mb-4">
-                        <a href="https://www.linkedin.com/in/thiago-shimabukuro-cortez-a7983112a/" class="hover:text-primary">LINKEDIN</a>
-                        <a href="https://www.instagram.com/cortez.th/" class="hover:text-primary">INSTAGRAM</a>
-                        <a href="https://github.com/thiagocortez96" class="hover:text-primary">GITHUB</a>
-                        <a href="https://www.behance.net/thiagocortez2/projects" class="hover:text-primary">BEHANCE</a>
+                    <div class="grid grid-cols-2 md:flex gap-6 justify-items-end md:justify-end font-archivo text-sm mb-4">
+                        <a href="https://www.linkedin.com/in/thiago-shimabukuro-cortez-a7983112a/" class="hover:text-primary text-right">LINKEDIN</a>
+                        <a href="https://www.instagram.com/cortez.th/" class="hover:text-primary text-right">INSTAGRAM</a>
+                        <a href="https://github.com/thiagocortez96" class="hover:text-primary text-right">GITHUB</a>
+                        <a href="https://www.behance.net/thiagocortez2/projects" class="hover:text-primary text-right">BEHANCE</a>
                     </div>
                     <p class="text-[10px] text-gray-500">&copy; 2026 — Todos os direitos reservados.</p>
                 </div>
@@ -372,56 +373,7 @@
     </button>
 
     <!-- FUNCIONALIDADES -->
-    <script>
-        window.addEventListener('scroll', () => {
-            const btn = document.getElementById('backToTop');
-            if (window.scrollY > 400) {
-                btn.classList.remove('opacity-0', 'invisible');
-                btn.classList.add('opacity-100', 'visible');
-            } else {
-                btn.classList.add('opacity-0', 'invisible');
-                btn.classList.remove('opacity-100', 'visible');
-            }
-        });
+    <script src="funcao.js"></script>
 
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-const contactForm = document.getElementById('contact-form');
-const submitBtn = document.getElementById('submit-btn');
-const successAlert = document.getElementById('success-message');
-
-contactForm.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    
-    submitBtn.disabled = true;
-    submitBtn.innerText = "ENVIANDO...";
-    submitBtn.style.opacity = "0.5";
-
-    const formData = new FormData(contactForm);
-
-    try {
-        const response = await fetch(contactForm.action, {
-            method: 'POST',
-            body: formData,
-            headers: { 'Accept': 'application/json' }
-        });
-
-        if (response.ok) {
-            contactForm.reset();
-            submitBtn.classList.add('hidden');
-            successAlert.classList.remove('hidden');
-        } else {
-            throw new Error('Erro no servidor');
-        }
-    } catch (error) {
-        alert("Opa! Algo deu errado. Tente enviar diretamente para thiago.cortez@edu.senai.br");
-        submitBtn.disabled = false;
-        submitBtn.innerText = "TENTAR NOVAMENTE";
-        submitBtn.style.opacity = "1";
-    }
-});
-    </script>
 </body>
 </html>
