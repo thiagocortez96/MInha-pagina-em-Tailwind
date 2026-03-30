@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiteco</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center p-4">
+
+  <div class="w-full max-w-md space-y-4">
+
+    <h1 class="text-2xl md:text-3xl font-bold text-center">THITECO</h1>
+
+    <!-- Board -->
+    <div id="board" class="grid gap-2"></div>
+
+    <!-- Input escondido para mobile -->
+    <input id="hiddenInput" maxlength="5" class="opacity-0 absolute" />
+
+    <!-- Teclado virtual -->
+    <div id="keyboard" class="space-y-2"></div>
+
+    <p id="message" class="text-center"></p>
+
+    <a href="index.html" class="block text-center bg-blue-600 hover:bg-blue-500 mt-4 py-2 rounded-lg">
+      Voltar
+    </a>
+  </div>
+
+  <script src="scriptthiteco.js"></script>
+</body>
+</html>
