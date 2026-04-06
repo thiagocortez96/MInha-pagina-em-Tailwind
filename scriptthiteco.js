@@ -104,18 +104,48 @@ function submitGuess() {
 
   const row = board.children[currentRow];
 
-  for (let i = 0; i < 5; i++) {
-    const cell = row.children[i];
+// 1. contar letras da palavra secreta
+const letterCount = {};
+
+for (let letter of secret) {
+  letterCount[letter] = (letterCount[letter] || 0) + 1;
+}
+
+// 2. array de resultado
+const result = Array(5).fill("gray");
+
+// 3. primeira passada (verdes)
+for (let i = 0; i < 5; i++) {
+  if (currentGuess[i] === secret[i]) {
+    result[i] = "green";
+    letterCount[currentGuess[i]]--;
+  }
+}
+
+// 4. segunda passada (amarelos)
+for (let i = 0; i < 5; i++) {
+  if (result[i] === "gray") {
     const letter = currentGuess[i];
 
-    if (letter === secret[i]) {
-      cell.classList.add("bg-green-600");
-    } else if (secret.includes(letter)) {
-      cell.classList.add("bg-yellow-500");
-    } else {
-      cell.classList.add("bg-gray-700");
+    if (letterCount[letter] > 0) {
+      result[i] = "yellow";
+      letterCount[letter]--;
     }
   }
+}
+
+// 5. aplicar no DOM
+for (let i = 0; i < 5; i++) {
+  const cell = row.children[i];
+
+  if (result[i] === "green") {
+    cell.classList.add("bg-green-600");
+  } else if (result[i] === "yellow") {
+    cell.classList.add("bg-yellow-500");
+  } else {
+    cell.classList.add("bg-gray-700");
+  }
+}
 
   if (currentGuess === secret) {
     message.textContent = "Você venceu!";
